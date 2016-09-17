@@ -175,15 +175,16 @@
 		-moz-animation: bg 60s linear infinite;
 		-webkit-animation: bg 60s linear infinite;
 		-ms-animation: bg 60s linear infinite;
-		animation: bg 60s linear infinite;
+		animation: bg 45s linear infinite;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
-		backface-visibility: hidden;
+		/*backface-visibility: hidden;*/
 		-moz-transform: translate3d(0,0,0);
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
+		animation-direction: alternate;
 	/* Set your background with this */
 
 		background: #348cb2 url("images/bg.jpg") bottom left;
@@ -191,7 +192,7 @@
 		height: 100%;
 		left: 0;
 		opacity: 1;
-		position: fixed;
+		position: center;
 		top: 0;
 	}
 
@@ -306,7 +307,7 @@
 		}
 	}
 
-	#overlay {
+	/*#overlay {
 		-moz-animation: overlay 1.5s 1.5s forwards;
 		-webkit-animation: overlay 1.5s 1.5s forwards;
 		-ms-animation: overlay 1.5s 1.5s forwards;
@@ -322,7 +323,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-	}
+	}*/
 
 /* Main */
 
