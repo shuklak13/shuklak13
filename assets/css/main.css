@@ -632,7 +632,6 @@
 
 			#header nav a {
 				-webkit-tap-highlight-color: transparent;
-				/*-webkit-tap-highlight-color: rgb(241, 240, 147);*/
 				-webkit-touch-callout: none;
 				border: 0;
 				display: inline-block;
@@ -662,8 +661,8 @@
 					#header nav a:hover:before {
 						/*background-color: rgba(255, 255, 255, 0.175);
 						color: #fff;*/
-						background-color: rgba(255, 252, 206, 0.486);
-						color: rgb(253, 247, 160)
+						background-color: rgba(255, 255, 255, 0.788);
+						color: rgb(0, 45, 168)
 					}
 
 				#header nav a:active {
