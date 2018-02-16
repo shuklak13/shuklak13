@@ -187,7 +187,7 @@
 		animation-direction: alternate;
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #000000 url("images/spiration.png") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -662,7 +662,7 @@
 						/*background-color: rgba(255, 255, 255, 0.175);
 						color: #fff;*/
 						background-color: rgba(255, 255, 255, 0.788);
-						color: rgb(0, 45, 168)
+						color: rgb(0, 0, 0)
 					}
 
 				#header nav a:active {
