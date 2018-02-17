@@ -59,7 +59,7 @@
 /* Basic */
 
 	body, input, select, textarea {
-		color: #fff;
+		color: rgb(49, 243, 31);
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
@@ -661,7 +661,7 @@
 					#header nav a:hover:before {
 						/*background-color: rgba(255, 255, 255, 0.175);
 						color: #fff;*/
-						background-color: rgba(255, 255, 255, 0.788);
+						background-color: rgba(78, 255, 87, 0.788);
 						color: rgb(0, 0, 0)
 					}
 
