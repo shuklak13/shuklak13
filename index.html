@@ -1,58 +1,202 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Karan Shukla</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<link rel="stylesheet" type="text/css" href="simptip.css" />
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Karan Shukla - About Me</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0 1rem;
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+  }
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Karan Shukla</h1>
-						<h2>Software Engineer @ Meta, Responsible AI</h2>
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/karan-shukla-51137980" class="icon fa-linkedin"><span class="label">LinkedIn</a></li>
-								<li><a href="https://docs.google.com/document/d/1pZdnGOIfc5Ik7vPWWRbwXhYoWf098V_LlYizVjAXAbw/" class="icon fa-user"><span class="label">Karan Shukla</a></li>
-								<li><a href="https://www.tensorflow.org/responsible_ai" class="icon fa-google"><span class="label">Google Responsible AI</a></li>
-							</ul>
-						</nav>
-						<nav>
-							<ul>
-								<li><a href="https://www.goodreads.com/user/show/123835434-karan-shukla" class="icon fa-book"><span class="label">Books</span></a></li>
-								<li><a href="https://shuklak13.github.io/shuklak13/motivation.html" class="icon fa-file-text-o"><span class="label">Motivation</span></a></li>
-								<li><a href="mailto:shuklak13@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+  header {
+    max-width: 700px;
+    margin: 2rem auto 1rem;
+    text-align: center;
+  }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+  }
 
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+  header .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  main {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+  }
+
+  h2 {
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+  }
+
+  section p,
+  section ul {
+    margin-top: 0.5rem;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+
+  a {
+    color: #1a0dab;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+      color: #0a4d99;
+    text-decoration: underline;
+  }
+
+
+  footer {
+    max-width: 700px;
+    margin: 2rem auto 4rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .contact-line {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact-line a {
+    margin-right: 1rem;
+  }
+
+  #interests > h2,
+  #contact > h2 {
+    text-align: center;
+  }
+
+  .team-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.3rem;
+      font-size: 1.5rem; /* same size as H2 */
+      font-weight: bold;
+    }
+
+  /* Optional smooth fade-in animation for content */
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease 1.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Karan Shukla</h1>
+  <div class="subtitle">AI Software Engineer | San Francisco</div>
+  <p>Heya! I’m an engineer who cares about the intersection of tech, governance, and society.</p>
+</header>
+
+<main>
+  <section id="tensorflow" class="fade-in">
+  <div class="team-header">
+    <span>TENSORFLOW</span>
+    <span>2018-2022</span>
+  </div>
+    <ul>
+      <li>At TensorFlow, I got my start contributing to TensorFlow’s <b><a href="https://www.tensorflow.org/tfx/model_analysis/" target="_blank" rel="noopener noreferrer">AI Evaluations</a></b> platform.</li>
+      <li>I became a founding member and later the engineering lead of Google’s <b>AI Transparency</b> team, working to build tools and best practices for training and evaluation through <b><a href="https://blog.tensorflow.org/2020/11/using-model-card-toolkit-for-tf-model-transparency.html" target="_blank" rel="noopener noreferrer">Model Cards</a></b>.</li>
+    </ul>
+  </section>
+
+  <section id="meta-ai" class="fade-in" style="animation-delay: 0.3s;">
+  <div class="team-header">
+    <span>META AI</span>
+    <span>2022-2025</span>
+  </div>
+    <ul>
+      <li>I continued work on AI Transparency at Meta, collaborating with <b>AI Policy</b> on the <a href="https://www.theverge.com/2023/6/29/23778068/meta-facebook-instagram-social-media-algorithms-ai-transparency" target="_blank" rel="noopener noreferrer">Digital Services Act</a> and driving the eng effort to launch <b>22 System Cards</b> (<a href="https://ai.meta.com/blog/how-ai-powers-experiences-facebook-instagram-system-cards/" target="_blank" rel="noopener noreferrer">Meta</a>, <a href="https://www.theverge.com/2023/6/29/23778068/meta-facebook-instagram-social-media-algorithms-ai-transparency" target="_blank" rel="noopener noreferrer">Verge</a>) across Facebook and Instagram.</li>
+      <li>With the advent of Generative AI, I built prototypes and awareness of <b>AI Authenticity</b> solutions to fight misinformation. I implemented Meta's first <b><a href="https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/" target="_blank" rel="noopener noreferrer">C2PA Ingestion</a></b> service which was eventually adopted across Facebook and Instagram.</li>
+      <li>I also built and scaled Meta's <b>AI Workflow Lineage</b> infrastructure. This started as a independent, bottom-up 2-eng project to address AI infrastructure gaps. We successfully graduated into an officially-supported product under Meta's core AI Metadata database, becoming a critical dependency for company-wide AI observability and developer tooling.</li>
+    </ul>
+  </section>
+
+  <section id="interests" class="fade-in" style="animation-delay: 0.6s;">
+    <h2>INTERESTS</h2>
+    <ul>
+      <li>I'm an amateur <a href="https://letterboxd.com/shuklaswag/films/" target="_blank" rel="noopener noreferrer">film snob</a> - I recently finished watching all of Bong Joon Ho's films.</li>
+      <li>I don’t game much, but I love the classic Nintendo games (Smash, Mario Kart, Pokemon). When I was younger, I tried recreating the original <a href="https://github.com/shuklak13/FinalFantasy" target="_blank" rel="noopener noreferrer">Final Fantasy</a> in Java. The code is very bad.</li>
+      <li>I recently moved to San Francisco and am looking for food recs!</li>
+      <li>Other misc things:
+  <a href="https://letterboxd.com/shuklaswag/films/" target="_blank" rel="noopener noreferrer">movies</a>,
+  <a href="https://www.goodreads.com/review/list/123835434?ref=nav_mybooks" target="_blank" rel="noopener noreferrer">books</a>,
+  <a href="https://500px.com/p/KaranShukla?view=photos" target="_blank" rel="noopener noreferrer">photography</a>.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="fade-in" style="animation-delay: 0.9s;">
+    <h2>CONTACT ME</h2>
+    <p class="contact-line">
+      <a href="https://www.linkedin.com/in/karan-shukla/" target="_blank" rel="noopener noreferrer">LinkedIn</a>  
+      <a href="https://www.instagram.com/shuklak13/" target="_blank" rel="noopener noreferrer">Instagram</a>  
+      <a href="https://github.com/shuklak13" target="_blank" rel="noopener noreferrer">Github</a>
+      <a href="mailto:shuklak13@gmail.com">Email</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Karan Shukla
+</footer>
+
+<script>
+  // Optional sequential fade-in animation
+  document.querySelectorAll(".fade-in").forEach((section, index) => {
+    section.style.animationDelay = `${index * 0.3}s`;
+  });
+</script>
+</body>
 </html>
